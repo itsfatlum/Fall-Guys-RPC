@@ -6,17 +6,30 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org)
 [![Support Server](https://img.shields.io/badge/Discord-Support%20Server-5865F2?logo=discord&logoColor=white)](https://discord.gg/tCWRxbmAwp)
 
-Fall-Guys-RPC is a lightweight tray app that updates Discord Rich Presence while you play Fall Guys.
+Simple Discord Rich Presence for Fall Guys.
 
 ## Features
 
-- Runs in background (no command prompt on launch)
-- Shows a tray icon with menu options:
-   - Open: opens live logs
-   - Close: exits the app
-- Uses a shared Discord application ID (no user-side app setup required)
-- Detects show/round information from logs
-- Keeps retrying if Discord or Fall Guys is not detected
+<img src="assets/In_Lobby.png" alt="In Lobby Example" width="350"/>
+
+- Shows "In Lobby" with the Fall Guys icon when in the lobby
+- Displays party size as "x of y" next to the people icon in the lobby
+- Shows the correct show icon and name in-game (Solos, Duos, Squads, etc.)
+- Displays the current map name under the show name in-game
+- Shows "Players Alive (x of y)" as the state in-game
+- Automatically formats show and map names for readability
+- Uses your custom Discord asset images for show icons
+
+## What You Can Also Do
+
+- Add more Discord asset images for new shows or custom events
+- Customize the display text for show, map, or party size
+- Adjust the logic to extract more accurate player counts from logs
+- Add support for additional platforms (e.g., Epic Games)
+- Change the tray icon or add more tray menu options
+- Extend presence to show round number, time elapsed, or other stats
+- Localize the display for different languages
+- Add error logging or a debug mode for troubleshooting
 
 ## Platform Support
 
