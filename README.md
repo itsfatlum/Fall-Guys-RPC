@@ -20,22 +20,6 @@ Simple Discord Rich Presence for Fall Guys.
 - Automatically formats show and map names for readability
 - Uses your custom Discord asset images for show icons
 
-## What You Can Also Do
-
-- Add more Discord asset images for new shows or custom events
-- Customize the display text for show, map, or party size
-- Adjust the logic to extract more accurate player counts from logs
-- Add support for additional platforms (e.g., Epic Games)
-- Change the tray icon or add more tray menu options
-- Extend presence to show round number, time elapsed, or other stats
-- Localize the display for different languages
-- Add error logging or a debug mode for troubleshooting
-
-## Platform Support
-
-- Steam: supported now
-- Epic Games: coming soon
-
 ## Download / Install
 
 ### 1. EXE (Recommended)
