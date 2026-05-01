@@ -2,15 +2,16 @@
 
 [![Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white)](https://www.microsoft.com/windows)
 [![Steam Supported](https://img.shields.io/badge/Steam-Supported-1b2838?logo=steam&logoColor=white)](https://store.steampowered.com)
-[![Epic Games](https://img.shields.io/badge/Epic%20Games-Coming%20Soon-444444?logo=epicgames&logoColor=white)](https://store.epicgames.com)
+[![Epic Games Supported](https://img.shields.io/badge/Epic%20Games-Supported-313131?logo=epicgames&logoColor=white)](https://store.epicgames.com)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org)
 [![Support Server](https://img.shields.io/badge/Discord-Support%20Server-5865F2?logo=discord&logoColor=white)](https://discord.gg/tCWRxbmAwp)
 
-Simple Discord Rich Presence for Fall Guys.
+Simple Discord Rich Presence for Fall Guys on Steam and Epic Games.
 
 ## Features
 
 - Runs as a tray app with Open and Close controls
+- Supports both Steam and Epic Games versions of Fall Guys
 - Checks the Fall Guys log file every 5 seconds
 - Clears Discord Rich Presence when Fall Guys is not running
 - Shows "In Lobby" while waiting in the Fall Guys lobby
@@ -57,22 +58,22 @@ After launch, use the tray icon to open logs or close the app.
 Install dependencies:
 
 ```powershell
-pip install -r Steam/requirements.txt
+pip install -r requirements.txt
 ```
 
 Run from source:
 
 ```powershell
-python Steam/main.py
+python main.py
 ```
 
 ## Build EXE
 
 ```powershell
-pyinstaller --noconfirm --clean --distpath Steam Fall-Guys-RPC.spec
+pyinstaller --noconfirm --clean --distpath . Fall-Guys-RPC.spec
 ```
 
-The built EXE will be created at `Steam/Fall-Guys-RPC.exe`.
+The built EXE will be created at `Fall-Guys-RPC.exe`.
 
 ## Logs
 
@@ -95,7 +96,7 @@ If status does not update on Discord:
 
 - Maps may sometimes display the wrong name because the app reads the latest useful round entry from the Fall Guys log.
 - Limited-time modes may not always be detected correctly if Fall Guys uses a new or unusual show ID.
-- Fall Guys detection expects the default Windows Fall Guys log location. If your setup stores `Player.log` somewhere else, the app may not detect the game correctly.
+- Fall Guys detection expects the default Windows Fall Guys log location used by Steam and Epic Games. If your setup stores `Player.log` somewhere else, the app may not detect the game correctly.
 
 ## Contributing
 
@@ -132,7 +133,13 @@ Fall-Guys-RPC shows your current Fall Guys status on Discord using Rich Presence
 <details>
 <summary>Does this support Epic Games?</summary>
 
-Not yet. The current version supports the Steam version of Fall Guys.
+Yes. Steam and Epic Games both use the same Fall Guys log location on Windows:
+
+```text
+C:/Users/<your-user>/AppData/LocalLow/Mediatonic/FallGuys_client/Player.log
+```
+
+The default Epic Games install path, `C:/Program Files/Epic Games/FallGuys`, does not change where the live Fall Guys log is written.
 
 </details>
 
@@ -212,11 +219,11 @@ You can also run the app from source with Python if you prefer.
 <details>
 <summary>Can I run it from source instead of using the EXE?</summary>
 
-Yes. Install the requirements and run `Steam/main.py` with Python:
+Yes. Install the requirements and run `main.py` with Python:
 
 ```powershell
-pip install -r Steam/requirements.txt
-python Steam/main.py
+pip install -r requirements.txt
+python main.py
 ```
 
 </details>

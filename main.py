@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw
 
 CLIENT_ID = "1494263420709503076"
 
-# Steam-only for now (Epic support will be added later)
+# Steam and Epic Games both write to this Unity log location on Windows.
 LOG_FILE = Path.home() / "AppData" / "LocalLow" / "Mediatonic" / "FallGuys_client" / "Player.log"
 POLL_INTERVAL_SECONDS = 5
 RECONNECT_DELAY_SECONDS = 10
