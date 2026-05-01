@@ -41,9 +41,9 @@ Simple Discord Rich Presence for Fall Guys on Steam and Epic Games.
 | --- | --- |
 | <img src="assets/Creator%20Spotlight.png" alt="Discord Creator Spotlight status preview" width="350"/> | <img src="assets/Explore.png" alt="Discord Explore status preview" width="350"/> |
 
-| Selecting Next Round | Waiting for Fall Guys |
-| --- | --- |
-| Placeholder: add `assets/Selecting_Next_Round.png` | Placeholder: add `assets/Waiting_For_Fall_Guys.png` |
+| Selecting Next Round |
+| --- |
+| <img src="assets/Selecting%20next%20round.png" alt="Discord Selecting Next Round status preview" width="350"/> |
 
 ## Download / Install
 
