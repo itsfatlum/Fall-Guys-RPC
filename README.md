@@ -10,24 +10,45 @@ Simple Discord Rich Presence for Fall Guys.
 
 ## Features
 
-<img src="assets/In_Lobby.png" alt="In Lobby Example" width="350"/>
+- Runs as a tray app with Open and Close controls
+- Checks the Fall Guys log file every 5 seconds
+- Clears Discord Rich Presence when Fall Guys is not running
+- Shows "In Lobby" while waiting in the Fall Guys lobby
+- Shows "Selecting next round" between rounds instead of falling back to lobby too early
+- Shows the current show and map in-game, for example `Show: Solos | Map: Door Dash`
+- Hides the map for Explore to avoid showing stale or misleading round names
+- Uses Discord's party-size display as `(x of y)` instead of showing players alive
+- Uses matching show icons for known shows like Solos, Duos, Squads, Knockout, Ranked Knockout, Creator Spotlight, and Explore
+- Automatically formats raw Fall Guys show and round IDs into readable names
+- Writes live app logs to help troubleshoot Discord or Fall Guys detection issues
 
-- Shows "In Lobby" with the Fall Guys icon when in the lobby
-- Displays party size as "x of y" next to the people icon in the lobby
-- Shows the correct show icon and name in-game (Solos, Duos, Squads, etc.)
-- Displays the current show and map name in-game
-- Displays party size as "x of y" instead of players alive
-- Automatically formats show and map names for readability
+## Discord Preview
+
+| Lobby | Solos |
+| --- | --- |
+| <img src="assets/In_Lobby.png" alt="Discord lobby status preview" width="350"/> | Placeholder: add `assets/In_Solos.png` |
+
+| Duos | Squads |
+| --- | --- |
+| Placeholder: add `assets/In_Duos.png` | Placeholder: add `assets/In_Squads.png` |
+
+| Knockout | Ranked Knockout |
+| --- | --- |
+| Placeholder: add `assets/In_Knockout.png` | Placeholder: add `assets/In_Ranked_Knockout.png` |
+
+| Creator Spotlight | Explore |
+| --- | --- |
+| Placeholder: add `assets/In_Creator_Spotlight.png` | Placeholder: add `assets/In_Explore.png` |
+
+| Selecting Next Round | Waiting for Fall Guys |
+| --- | --- |
+| Placeholder: add `assets/Selecting_Next_Round.png` | Placeholder: add `assets/Waiting_For_Fall_Guys.png` |
 
 ## Download / Install
 
 ### 1. EXE (Recommended)
 
-Run directly:
-
-```powershell
-Steam/Fall-Guys-RPC.exe
-```
+Download the EXE from Releases and open it.
 
 After launch, use the tray icon to open logs or close the app.
 
