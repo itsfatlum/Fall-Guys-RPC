@@ -1,8 +1,8 @@
 # Fall-Guys-RPC
 
 [![Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white)](https://www.microsoft.com/windows)
-[![Steam Supported](https://img.shields.io/badge/Steam-Supported-1b2838?logo=steam&logoColor=white)](https://store.steampowered.com)
-[![Epic Games Supported](https://img.shields.io/badge/Epic%20Games-Supported-313131?logo=epicgames&logoColor=white)](https://store.epicgames.com)
+[![Steam Supported](https://img.shields.io/badge/Steam-Supported-1b2838?logo=steam&logoColor=white)](https://store.steampowered.com/app/1097150/Fall_Guys)
+[![Epic Games Supported](https://img.shields.io/badge/Epic%20Games-Supported-313131?logo=epicgames&logoColor=white)](https://store.epicgames.com/p/fall-guys)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org)
 [![Support Server](https://img.shields.io/badge/Discord-Support%20Server-5865F2?logo=discord&logoColor=white)](https://discord.gg/tCWRxbmAwp)
 
