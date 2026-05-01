@@ -16,7 +16,7 @@ Simple Discord Rich Presence for Fall Guys.
 - Shows "In Lobby" while waiting in the Fall Guys lobby
 - Shows "Selecting next round" between rounds instead of falling back to lobby too early
 - Shows the current show and map in-game, for example `Show: Solos | Map: Door Dash`
-- Hides the map for Explore to avoid showing stale or misleading round names
+- Hides the map for Explore and Creator Spotlight to avoid showing stale or misleading round names
 - Uses Discord's party-size display as `(x of y)` instead of showing players alive
 - Uses matching show icons for known shows like Solos, Duos, Squads, Knockout, Ranked Knockout, Creator Spotlight, and Explore
 - Automatically formats raw Fall Guys show and round IDs into readable names
@@ -26,19 +26,19 @@ Simple Discord Rich Presence for Fall Guys.
 
 | Lobby | Solos |
 | --- | --- |
-| <img src="assets/In_Lobby.png" alt="Discord lobby status preview" width="350"/> | Placeholder: add `assets/In_Solos.png` |
+| <img src="assets/Lobby.png" alt="Discord lobby status preview" width="350"/> | <img src="assets/Solos.png" alt="Discord Solos status preview" width="350"/> |
 
 | Duos | Squads |
 | --- | --- |
-| Placeholder: add `assets/In_Duos.png` | Placeholder: add `assets/In_Squads.png` |
+| <img src="assets/Duos.png" alt="Discord Duos status preview" width="350"/> | <img src="assets/Squads.png" alt="Discord Squads status preview" width="350"/> |
 
 | Knockout | Ranked Knockout |
 | --- | --- |
-| Placeholder: add `assets/In_Knockout.png` | Placeholder: add `assets/In_Ranked_Knockout.png` |
+| <img src="assets/Knockout.png" alt="Discord Knockout status preview" width="350"/> | <img src="assets/Ranked%20Knockout.png" alt="Discord Ranked Knockout status preview" width="350"/> |
 
 | Creator Spotlight | Explore |
 | --- | --- |
-| Placeholder: add `assets/In_Creator_Spotlight.png` | Placeholder: add `assets/In_Explore.png` |
+| <img src="assets/Creator%20Spotlight.png" alt="Discord Creator Spotlight status preview" width="350"/> | <img src="assets/Explore.png" alt="Discord Explore status preview" width="350"/> |
 
 | Selecting Next Round | Waiting for Fall Guys |
 | --- | --- |
@@ -69,10 +69,10 @@ python Steam/main.py
 ## Build EXE
 
 ```powershell
-pyinstaller Fall-Guys-RPC.spec
+pyinstaller --noconfirm --clean --distpath Steam Fall-Guys-RPC.spec
 ```
 
-Then move `dist/Fall-Guys-RPC.exe` into the `Steam` folder.
+The built EXE will be created at `Steam/Fall-Guys-RPC.exe`.
 
 ## Logs
 
@@ -90,6 +90,28 @@ If status does not update on Discord:
 - Ensure Fall Guys is running
 - Open tray icon menu and click Open to view live logs
 - Check the log file path shown above
+
+## Known Issues
+
+- Maps may sometimes display the wrong name because the app reads the latest useful round entry from the Fall Guys log.
+- Limited-time modes may not always be detected correctly if Fall Guys uses a new or unusual show ID.
+
+## Contributing
+
+If you notice a wrong show name, map name, icon, or lobby/game status, you can help improve detection by joining the Discord support server.
+
+Please upload your app logs and describe what looked wrong, for example:
+
+- Which show or mode you were playing
+- What Discord displayed
+- What Discord should have displayed
+- Whether you were in the lobby, loading, in-game, or between rounds
+
+Logs are stored here:
+
+```text
+C:/Users/<your-user>/AppData/Local/Fall-Guys-RPC/rpc.log
+```
 
 ## Support
 
