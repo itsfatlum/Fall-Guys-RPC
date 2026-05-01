@@ -48,7 +48,7 @@ Simple Discord Rich Presence for Fall Guys.
 
 ### 1. EXE (Recommended)
 
-Download the EXE from Releases and open it.
+Download the EXE from the [latest release](https://github.com/itsfatlum/Fall-Guys-RPC/releases/latest) and open it.
 
 After launch, use the tray icon to open logs or close the app.
 
@@ -95,6 +95,7 @@ If status does not update on Discord:
 
 - Maps may sometimes display the wrong name because the app reads the latest useful round entry from the Fall Guys log.
 - Limited-time modes may not always be detected correctly if Fall Guys uses a new or unusual show ID.
+- Fall Guys detection expects the default Windows Fall Guys log location. If your setup stores `Player.log` somewhere else, the app may not detect the game correctly.
 
 ## Contributing
 
@@ -202,7 +203,7 @@ The EXE is built with PyInstaller as a single-file app. Some antivirus engines f
 
 The current v0.1.0 test scan is available here:
 
-https://www.virustotal.com/gui/file/065ea8c1d6054425621f02d0977a59920da786dffe25c59a27ea799b41567dbc?nocache=1
+https://www.virustotal.com/gui/file/007eb44473e7a9d7e480229024dff273b15453c2cd24bd256738a1254457ff28?nocache=1
 
 You can also run the app from source with Python if you prefer.
 
